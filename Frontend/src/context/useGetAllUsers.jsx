@@ -10,7 +10,7 @@ function useGetAllUsers() {
       try {
         const token = Cookies.get("jwt");
         const response = await axios.get("https://chatapplication-kbtr.onrender.com/api/user/allusers", {
-          withCredentialscredentials: true,
+          withCredentials: true,
           headers: {
             Authorization: `Bearer ${token}`,
           },

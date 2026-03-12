@@ -1,4 +1,4 @@
-import express from "express";
+import express from "express";import { logout } from "../controller/user.controller.js";
 import {
   allUsers,
   login,

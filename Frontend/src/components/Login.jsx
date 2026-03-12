@@ -23,7 +23,7 @@ function Login() {
     axios.post("https://chatapplication-kbtr.onrender.com/api/user/login", 
         userInfo,
         {
-          withCredentials:true,
+          withCredentials:true
  })
       .then((response) => {
         if (response.data) {

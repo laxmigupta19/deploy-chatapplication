@@ -20,8 +20,11 @@ function Login() {
       password: data.password,
     };
     // console.log(userInfo);
-    axios
-      .post("https://chatapplication-kbtr.onrender.com/api/user/login", userInfo)
+    axios.post("https://chatapplication-kbtr.onrender.com/api/user/login", 
+        userInfo,
+        {
+          withCredentials:true,
+ })
       .then((response) => {
         if (response.data) {
           toast.success("Login successful");

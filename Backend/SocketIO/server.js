@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://chatapplication-kbtr.onrender.com",//origin: "http://localhost:3001",
+    origin: "https://deploy-chatapplication.vercel.app",//origin: "http://localhost:3001",
     methods: ["GET", "POST"],
   },
 });
